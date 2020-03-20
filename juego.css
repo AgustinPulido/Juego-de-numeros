@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    background-repeat: repeat;
+    height: auto;
+    width: auto;
+}
+
+section {
+    background-image: url(numeros.jpg);
+    width: 750px;
+    height: 875px;
+    margin: auto;
+    padding: auto;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+    background-color: white;
+}
+
+input {
+    text-align: center;
+}
+
+label {
+    color: white;
+}

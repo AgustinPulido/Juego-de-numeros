@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="juego.css" />
+    <script src="juego.js" type="text/javascript" charset="utf-8"></script>>
+    <script>
+        function iniciar() {
+            nombre1 = document.getElementById("nombre");
+            nombre1.addEventListener("input", validacion, false);
+            validacion();
+        }
+
+        function validacion() {
+            if (nombre1.value === "") {
+                nombre1.setCustomValidity('Coloque su nombre');
+                nombre1.style.background = '#FFDDDD';
+            } else {
+                nombre1.setCustomValidity("");
+                nombre1.style.background = '#FFFFFF';
+            }
+        }
+        window.addEventListener("load", iniciar, false);
+    </script>
+</head>
+
+<body>
+    <section>
+        <h1>Adivina el numero secreto! </h1>
+        <h3>Ingresa 0 para salir del programa</h3>
+        <form name="registracion" method="get"></form>
+        <label>Ingrese su nombre: </label><input type="text" id="nombre" /><br/><br/>
+        <input type="submit" id="send" value="Validar"><br/><br/>
+        <input type="button" value="Iniciar juego" onclick="numeromisterioso()" />
+
+    </section>
+</body>
+
+</html>z
